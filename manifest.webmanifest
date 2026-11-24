@@ -1,17 +1,30 @@
 {
-  "name": "Comptage par zones",
-  "short_name": "Comptage",
-  "description": "Inventaire par zones : scan, quantités, PPH, export Excel.",
+  "name": "EXASIO Comptage",
+  "short_name": "EXASIO",
+  "description": "EXASIO, spécialiste d’inventaire : comptage par zones, quantités, contrôle, rapport.",
   "start_url": "./index.html",
   "scope": "./",
   "display": "fullscreen",
-  "display_override": ["fullscreen", "standalone"],
+  "display_override": [
+    "fullscreen",
+    "standalone"
+  ],
   "orientation": "portrait-primary",
-  "background_color": "#111924",
-  "theme_color": "#152231",
+  "background_color": "#0a1430",
+  "theme_color": "#0a1430",
   "lang": "fr",
   "icons": [
-    {"src": "logo-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable"},
-    {"src": "logo-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable"}
+    {
+      "src": "logo-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "logo-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
   ]
 }
