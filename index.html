@@ -2545,7 +2545,7 @@ body:not(.control) .ctrlsrc{display:none}
       '<div class="msec">Fin de mission</div>'+
       row("xFin", "lock", state.finished ? "Rouvrir la mission" : "Clôturer la mission", state.finished ? "" : "Bloque les scans", "red")+
       row("xNew", "add", "Nouvelle mission", "La mission actuelle est archivée", "red")+
-      '<p class="mver">EXASIO · Spécialiste d’inventaire<br>Version 88 du 24/11/2026</p>');
+      '<p class="mver">EXASIO · Spécialiste d’inventaire<br>Version 91 du 25/11/2026</p>');
     const keep = () => { state.check = $("mck").checked; state.autoBackup = $("mab").checked; state.bigQty = Math.max(2, parseInt($("mbq").value,10) || 50); state.confirm = $("mv").checked; state.hold = $("mhold").checked; state.keySound = $("mks").checked; state.mission = $("mn").value.trim(); state.prefix = ($("mp").value.trim() || "Z").toUpperCase(); save(); render(); };
     $("xNo").onclick = () => { keep(); closeSheet(); };
     $("xB").onclick = () => { beep(true); setTimeout(() => beep(true, "zone"), 500); setTimeout(() => beep(false), 1100); };
