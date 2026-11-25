@@ -1,4 +1,4 @@
-const CACHE = "comptage-v89";
+const CACHE = "comptage-v90";
 const FILES = ["./", "./index.html", "./manifest.webmanifest", "./xlsx.full.min.js", "./zxing.min.js", "./firebase-app-compat.js", "./firebase-auth-compat.js", "./firebase-firestore-compat.js", "./logo-192.png", "./logo-512.png", "./exasio-logo.png", "./barlow-latin-400-normal.woff2", "./barlow-latin-500-normal.woff2", "./barlow-latin-600-normal.woff2", "./barlow-condensed-latin-600-normal.woff2", "./barlow-condensed-latin-700-normal.woff2"];
 self.addEventListener("install", e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(FILES.map(f => new Request(f, {cache: "reload"})))));
